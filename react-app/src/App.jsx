@@ -2,12 +2,17 @@ import Header from "./Header.jsx"
 import Footer from "./Footer.jsx";
 import Food from "./Food.jsx";
 import Card from "./Card.jsx";
-import Button from "./Button/Button.jsx";
-import Student from "./Student.jsx";
+import Button from "./Button/Button.jsx"; // For learning css
+
+import Student from "./Student.jsx";  // For learning props
+
+import UserGreeting from "./UserGreeting.jsx"; // For learning conditional rendering
 
 function App() {
 
   // props: read-only components that are shared between components. a parent component can send data to a child component.  <Component key=value/>
+
+  // Conditional Rendering: allows u to control what gets rendered in ur applcation based on certain conditions(show, hide or change components)
 
   return (
     <>
@@ -22,6 +27,10 @@ function App() {
       <Student name="Ayush" age="25" isStudent={true}/>
       <Student name="Rahul" age={27} isStudent={false}/>
       <Student name="Ram" age={34} isStudent={true}/>
+
+
+      {/* Conditional Rendering */}
+      <UserGreeting isLoggedIn={true} username="ayush"/>
     </>
   );
 }
