@@ -3,6 +3,7 @@ import Footer from "./Footer.jsx";
 import Food from "./Food.jsx";
 import Card from "./Card.jsx";
 import Button from "./Button/Button.jsx";
+import Student from "./Student.jsx";
 
 function App() {
 
@@ -10,11 +11,17 @@ function App() {
 
   return (
     <>
-      <Header/> {/* Basics*/}
-      <Food />  {/* Basics*/}
-      <Card />  {/* Basics*/}
+      <Header/>
+      <Food /> 
+      <Card /> 
       <Button />  {/* For learning css*/}
-      <Footer/>   {/* Basics*/}
+      <Footer/>  
+
+
+      {/* Props */}
+      <Student name="Ayush" age="25" isStudent={true}/>
+      <Student name="Rahul" age={27} isStudent={false}/>
+      <Student name="Ram" age={34} isStudent={true}/>
     </>
   );
 }

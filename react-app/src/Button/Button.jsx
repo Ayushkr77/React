@@ -21,7 +21,7 @@
 import styles from "./Button.module.css"
 export default function Button() {
 
-    const inlineStyles={
+    const inlineStyles={   // In inline, camelcase is follwed and are separated by commas
         backgroundColor: "rgb(72, 72, 160)",
         color: "white",
         padding: "10px 20px",

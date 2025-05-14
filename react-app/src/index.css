@@ -27,3 +27,17 @@
     margin: 0;
     color: hsl(0,0%,30%);
 }
+
+
+
+
+/* For Student.jsx */
+.student {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    padding: 10px;
+    border: 1px solid hsla(0,0%,50%,0.8);
+}
+.student p{
+    margin: 0; 
+}
