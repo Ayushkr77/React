@@ -8,6 +8,10 @@ import Student from "./Student.jsx";  // For learning props
 
 import UserGreeting from "./UserGreeting.jsx"; // For learning conditional rendering
 
+import List from "./List.jsx";  // For learning render lists
+
+
+
 function App() {
 
   // props: read-only components that are shared between components. a parent component can send data to a child component.  <Component key=value/>
@@ -31,6 +35,9 @@ function App() {
 
       {/* Conditional Rendering */}
       <UserGreeting isLoggedIn={true} username="ayush"/>
+
+      {/* Render Lists */}
+      <List />
     </>
   );
 }
