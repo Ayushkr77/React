@@ -14,4 +14,6 @@ export default function UserGreeting(props) {
 
     // Using ternary operator
     return props.isLoggedIn?welcmMsg:guestMsg;
+
+    // Can also use Short-circuit(&&) instead of if else and ternary operator
 }

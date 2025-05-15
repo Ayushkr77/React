@@ -26,6 +26,8 @@ import MyComponent2 from "./MyComponent2.jsx";  // For learning update Objects i
 
 import MyComponent3 from "./MyComponent3.jsx";   // For learning update Arrays in state
 
+import MyComponent4 from "./MyComponent4.jsx";  // // For learning update Array of objects in state
+
 
 function App() {
 
@@ -94,6 +96,9 @@ function App() {
 
       {/* Update arrays in state */}
       <MyComponent3 />
+
+      {/* Update array of objects in state */}
+      <MyComponent4 />
     </>
   );
 }
