@@ -16,6 +16,8 @@ import MyComponent from "./MyComponent.jsx";  // For learning useState
 
 import Counter from "./Counter.jsx";  // Counter
 
+import MyComponent1 from "./MyComponent1.jsx";  // For learning onChange
+
 
 function App() {
 
@@ -32,6 +34,8 @@ function App() {
   // React Hook: Special function that allows functional components to use react feature without writing class components. (useState, useEffect, useReducer, useContext, useCallback and more...)
 
   // useState: a react hook that allows the creation of a stateful variable and a setter function to update its value in the virtual DOM.
+
+  // onChange: event handler used primarily with form elements ex.: <input>, <textarea>, <select>, <radio>. Triggers a function every time the value of the input changes
 
 
 
@@ -65,6 +69,9 @@ function App() {
 
       {/* Counter */}
       <Counter />
+
+      {/* onChange */}
+      <MyComponent1 />
     </>
   );
 }
