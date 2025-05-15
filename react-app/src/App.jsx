@@ -14,6 +14,8 @@ import Button1 from "./Button1.jsx"; // For learning click events
 
 import MyComponent from "./MyComponent.jsx";  // For learning useState
 
+import Counter from "./Counter.jsx";  // Counter
+
 
 function App() {
 
@@ -60,6 +62,9 @@ function App() {
 
       {/* useState */}
       <MyComponent />
+
+      {/* Counter */}
+      <Counter />
     </>
   );
 }
