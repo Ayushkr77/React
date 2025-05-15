@@ -18,6 +18,8 @@ import Counter from "./Counter.jsx";  // Counter
 
 import MyComponent1 from "./MyComponent1.jsx";  // For learning onChange
 
+import ColorPicker from "./ColorPicker.jsx";  // ColorPicker
+
 
 function App() {
 
@@ -72,6 +74,9 @@ function App() {
 
       {/* onChange */}
       <MyComponent1 />
+
+      {/* Color Picker */}
+      <ColorPicker />
     </>
   );
 }
