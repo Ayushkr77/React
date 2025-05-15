@@ -22,6 +22,8 @@ import ColorPicker from "./ColorPicker.jsx";  // ColorPicker
 
 import Counter1 from "./Counter1.jsx";  // For learning updater function
 
+import MyComponent2 from "./MyComponent2.jsx";  // For learning update Objects in state
+
 
 function App() {
 
@@ -84,6 +86,9 @@ function App() {
 
       {/* Updater Function */}
       <Counter1 />
+
+      {/* Update objects in state */}
+      <MyComponent2 />
     </>
   );
 }
