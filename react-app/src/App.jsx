@@ -24,6 +24,8 @@ import Counter1 from "./Counter1.jsx";  // For learning updater function
 
 import MyComponent2 from "./MyComponent2.jsx";  // For learning update Objects in state
 
+import MyComponent3 from "./MyComponent3.jsx";   // For learning update Arrays in state
+
 
 function App() {
 
@@ -89,6 +91,9 @@ function App() {
 
       {/* Update objects in state */}
       <MyComponent2 />
+
+      {/* Update arrays in state */}
+      <MyComponent3 />
     </>
   );
 }
