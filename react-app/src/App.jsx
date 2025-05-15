@@ -20,6 +20,8 @@ import MyComponent1 from "./MyComponent1.jsx";  // For learning onChange
 
 import ColorPicker from "./ColorPicker.jsx";  // ColorPicker
 
+import Counter1 from "./Counter1.jsx";  // For learning updater function
+
 
 function App() {
 
@@ -38,6 +40,8 @@ function App() {
   // useState: a react hook that allows the creation of a stateful variable and a setter function to update its value in the virtual DOM.
 
   // onChange: event handler used primarily with form elements ex.: <input>, <textarea>, <select>, <radio>. Triggers a function every time the value of the input changes
+
+  // updater function: a function passed as an argument to setState() usually. ex.: setYear(year+1). Allow for safe updates based on the previous state. Used with multiple state updates and asynchronous functions. Good practice to use updater functions
 
 
 
@@ -77,6 +81,9 @@ function App() {
 
       {/* Color Picker */}
       <ColorPicker />
+
+      {/* Updater Function */}
+      <Counter1 />
     </>
   );
 }
