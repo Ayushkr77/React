@@ -10,6 +10,7 @@ import UserGreeting from "./UserGreeting.jsx"; // For learning conditional rende
 
 import List from "./List.jsx";  // For learning render lists
 
+import Button1 from "./Button1.jsx"; // For learning click events
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
   // props: read-only components that are shared between components. a parent component can send data to a child component.  <Component key=value/>
 
   // Conditional Rendering: allows u to control what gets rendered in ur applcation based on certain conditions(show, hide or change components)
+
+  // Click event: an interaction when a user clicks on a specific element. We can respond to clicks by passing a callback to the onClick event handler.
 
   return (
     <>
@@ -38,6 +41,9 @@ function App() {
 
       {/* Render Lists */}
       <List />
+
+      {/* Click events */}
+      <Button1 />
     </>
   );
 }
