@@ -1,6 +1,6 @@
 export default function List() {
 
-    // We can also pass this array fruits as props from app.jsx
+    // We can also pass this array fruits as props from app.jsx.   Declare fruits there and pass <List items={fruits}/> and then here we can access by props.items
     const fruits = [
         { id: 1, name: "Apple", calories: 95 },
         { id: 2, name: "Banana", calories: 105 },
