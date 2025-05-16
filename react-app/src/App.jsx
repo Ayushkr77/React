@@ -36,6 +36,8 @@ import MyComponent6 from "./MyComponent6.jsx";  // Window height and width
 
 import DigitalClock from "./DigitalClock.jsx";  // Digital Clock
 
+import ComponentA from "./ComponentA.jsx";  // useContext
+
 
 function App() {
 
@@ -67,6 +69,16 @@ function App() {
   // useEffect(()={}, [value])   runs once on mount+when value changes
   // Uses: event listeners, DOM manipulation, Subscriptions(real-time updates), fetching data from an API, clean up when a component unmounts
   // mounting means when we add component to DOM, and unmounting means when we remove any component
+
+
+// useContext(): react hook that allows u to share values between multiple levels of components without passing props through each level.
+
+// Provider component 3 steps
+// i) import { createContext } from 'react';
+// ii) export const MyContext = createContext();
+// iii) <MyContext.Provider value={value}>
+          // <Child />
+     // </MyContext.Provider>
 
 
 
@@ -131,6 +143,9 @@ function App() {
 
       {/* Digital Clock */}
       <DigitalClock />
+
+      {/* useContext */}
+      <ComponentA />
     </>
   );
 }
