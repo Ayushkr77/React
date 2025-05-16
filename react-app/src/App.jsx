@@ -32,6 +32,8 @@ import TodoList from "./todoList.jsx";  // todo List
 
 import MyComponent5 from "./MyComponent5.jsx";  // For learning useEffect()
 
+import MyComponent6 from "./MyComponent6.jsx";  // Window height and width
+
 
 function App() {
 
@@ -119,6 +121,9 @@ function App() {
 
       {/* useEffect() */}
       <MyComponent5 />
+
+      {/* Window height and width */}
+      <MyComponent6 />
     </>
   );
 }
