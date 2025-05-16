@@ -30,6 +30,8 @@ import MyComponent4 from "./MyComponent4.jsx";  // // For learning update Array 
 
 import TodoList from "./todoList.jsx";  // todo List
 
+import MyComponent5 from "./MyComponent5.jsx";  // For learning useEffect()
+
 
 function App() {
 
@@ -50,6 +52,16 @@ function App() {
   // onChange: event handler used primarily with form elements ex.: <input>, <textarea>, <select>, <radio>. Triggers a function every time the value of the input changes
 
   // updater function: a function passed as an argument to setState() usually. ex.: setYear(year+1). Allow for safe updates based on the previous state. Used with multiple state updates and asynchronous functions. Good practice to use updater functions
+
+
+  // useEffect(): react hook that tells react to do some code when(pick one): this component re-renders, this component mounts, the state of a value changes
+  // useEffect(function, [dependencies])
+  // useEffect(()=>{})   runs aftere every re-render
+  // useEffect(function, [])   runs only on mount, runs once after the first render
+  // useEffect(()={}, [value])   runs once on mount+when value changes
+  // Uses: event listeners, DOM manipulation, Subscriptions(real-time updates), fetching data from an API, clean up when a component unmounts
+  // mounting means when we add component to DOM, and unmounting means when we remove any component
+
 
 
 
@@ -104,6 +116,9 @@ function App() {
 
       {/* Todo List */}
       <TodoList />
+
+      {/* useEffect() */}
+      <MyComponent5 />
     </>
   );
 }
