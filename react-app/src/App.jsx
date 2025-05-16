@@ -34,6 +34,8 @@ import MyComponent5 from "./MyComponent5.jsx";  // For learning useEffect()
 
 import MyComponent6 from "./MyComponent6.jsx";  // Window height and width
 
+import DigitalClock from "./DigitalClock.jsx";  // Digital Clock
+
 
 function App() {
 
@@ -55,6 +57,8 @@ function App() {
 
   // updater function: a function passed as an argument to setState() usually. ex.: setYear(year+1). Allow for safe updates based on the previous state. Used with multiple state updates and asynchronous functions. Good practice to use updater functions
 
+// useEffect is a React Hook that lets you run side effects in function components..
+// Side effects are anything that happens outside the component itself or interacts with the outside world, like:Fetching data from an API Setting up timers (setInterval, setTimeout) Listening to scroll or resize events Manipulating the DOM directly Subscribing/unsubscribing to data streams
 
   // useEffect(): react hook that tells react to do some code when(pick one): this component re-renders, this component mounts, the state of a value changes
   // useEffect(function, [dependencies])
@@ -124,6 +128,9 @@ function App() {
 
       {/* Window height and width */}
       <MyComponent6 />
+
+      {/* Digital Clock */}
+      <DigitalClock />
     </>
   );
 }
