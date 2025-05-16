@@ -28,6 +28,8 @@ import MyComponent3 from "./MyComponent3.jsx";   // For learning update Arrays i
 
 import MyComponent4 from "./MyComponent4.jsx";  // // For learning update Array of objects in state
 
+import TodoList from "./todoList.jsx";  // todo List
+
 
 function App() {
 
@@ -99,6 +101,9 @@ function App() {
 
       {/* Update array of objects in state */}
       <MyComponent4 />
+
+      {/* Todo List */}
+      <TodoList />
     </>
   );
 }
