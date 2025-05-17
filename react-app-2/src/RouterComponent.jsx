@@ -6,11 +6,13 @@ export default function RouterComponent() {
     return (
         <div>
             <BrowserRouter>
-                <nav>  {/* Not necessary to use nav tag */}
-                    <Link to="/home">Home Page</Link> |    {/* We are using Link tag instead of anchor tag bcz if we use anchor tag, then again whole page will be loaded i.e., whole html will again load, so that will not be a single page application */}
+
+                {/* Now we can write the below commented code in layout function */}
+                {/* <nav>  
+                    <Link to="/home">Home Page</Link> |   
                     <Link to="/about">About Page</Link> |
                     <Link to="/contact">Contact Page</Link>
-                </nav>
+                </nav> */}
 
                 <Routes>
                     <Route path="/" element={<Layout />}>  {/* Not necessary to write layout, we can also remove this line but it is good practice as a layout is a component structure used to define common UI sections (like a navbar, sidebar, or footer) that are shared across multiple pages.    And If you remove this parent route(that is this line), 
@@ -32,6 +34,14 @@ export default function RouterComponent() {
 function Layout() {
     return (
         <div>
+
+            <nav>  {/* Not necessary to use nav tag */}
+                <Link to="/home">Home Page</Link> |    {/* We are using Link tag instead of anchor tag bcz if we use anchor tag, then again whole page will be loaded i.e., whole html will again load, so that will not be a single page application */}
+                <Link to="/about">About Page</Link> |
+                <Link to="/contact">Contact Page</Link>
+            </nav>
+
+
             <header>
                 <h2>This is the Header</h2>
             </header>
