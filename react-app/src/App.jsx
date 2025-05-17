@@ -40,7 +40,7 @@ import ComponentA from "./ComponentA.jsx";  // useContext
 
 import MyComponent7 from "./MyComponent7.jsx";  // For learning useRef
 
-import Stopwatch from "./StopWatch.jsx";
+import Stopwatch from "./StopWatch.jsx";   // Stop Watch
 
 
 function App() {
