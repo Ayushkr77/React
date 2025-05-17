@@ -38,6 +38,8 @@ import DigitalClock from "./DigitalClock.jsx";  // Digital Clock
 
 import ComponentA from "./ComponentA.jsx";  // useContext
 
+import MyComponent7 from "./MyComponent7.jsx";  // For learning useRef
+
 
 function App() {
 
@@ -79,6 +81,11 @@ function App() {
 // iii) <MyContext.Provider value={value}>
           // <Child />
      // </MyContext.Provider>
+
+
+  // useRef(): use reference does not cause re-renders when its value changes. when u want a component to remember some information, but u dont want that info to trigger new renders
+  // i) accessing/interacting with DOM elements. ii) handling focus, animations and transitions. iii) managing timers and intervals
+  // useState triggers re-renders, but useRef does not.
 
 
 
@@ -146,6 +153,9 @@ function App() {
 
       {/* useContext */}
       <ComponentA />
+
+      {/* useRef */}
+      <MyComponent7 />
     </>
   );
 }
