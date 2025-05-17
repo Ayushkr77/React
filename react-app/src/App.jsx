@@ -40,6 +40,8 @@ import ComponentA from "./ComponentA.jsx";  // useContext
 
 import MyComponent7 from "./MyComponent7.jsx";  // For learning useRef
 
+import Stopwatch from "./StopWatch.jsx";
+
 
 function App() {
 
@@ -156,6 +158,9 @@ function App() {
 
       {/* useRef */}
       <MyComponent7 />
+
+      {/* Stopwatch */}
+      <Stopwatch />
     </>
   );
 }
