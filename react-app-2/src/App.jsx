@@ -16,6 +16,8 @@ import Counter2 from './AdditionalHooks/Counter2.jsx'   // useCallback Hook
 
 import MemoHook from './AdditionalHooks/MemoHook.jsx'   // useMemo Hook
 
+import Form from './Form.jsx'  // Form in react, Controlled and Uncontrolled Components
+
 function App() {
 
   // useReducer Hook is a react hook used for state management. Alternative of useState hook. Preferable for complex state management.
@@ -52,6 +54,9 @@ function App() {
 
       {/* useMemo Hook */}
       <MemoHook />
+
+      {/* Form in react, Controlled and Uncontrolled Components */}
+      <Form />
     </>
   )
 }
