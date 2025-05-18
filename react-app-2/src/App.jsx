@@ -14,6 +14,8 @@ import Counter1 from './AdditionalHooks/Counter1.jsx'  // useReducer Hook
 
 import Counter2 from './AdditionalHooks/Counter2.jsx'   // useCallback Hook
 
+import MemoHook from './AdditionalHooks/MemoHook.jsx'   // useMemo Hook
+
 function App() {
 
   // useReducer Hook is a react hook used for state management. Alternative of useState hook. Preferable for complex state management.
@@ -47,6 +49,9 @@ function App() {
 
       {/* useCallback Hook */}
       <Counter2 />
+
+      {/* useMemo Hook */}
+      <MemoHook />
     </>
   )
 }
